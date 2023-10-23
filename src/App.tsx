@@ -12,17 +12,19 @@ function App() {
     <>
       <h1>Tech-Net</h1>
       <div>
-        <button onClick={() => dispatch(increment())}>Increment</button>
-      </div>
+        <div className="text-green-500 p-4">
+          <button onClick={() => dispatch(increment())}>Increment</button>
+        </div>
 
-      <div>
-        <button onClick={() => dispatch(incrementByAmount(5))}>
-          Increment By Amount
-        </button>
-      </div>
-      <div>{count}</div>
-      <div>
-        <button onClick={() => dispatch(decrement())}>Decrement</button>
+        <div className="text-red-500 p-4">
+          <button onClick={() => dispatch(incrementByAmount(5))}>
+            Increment By Amount
+          </button>
+        </div>
+        <div className="text-cyan-500 p-4">{count}</div>
+        <div className="text-cyan-500 p-4">
+          <button onClick={() => dispatch(decrement())}>Decrement</button>
+        </div>
       </div>
     </>
   );
